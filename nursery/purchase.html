@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Good gums Nursery</title>
+    <meta name="author" content="Deon walker" />
+    <meta name="keywords" content="Good gums,purchase form" />
+    <meta name="description" content="Purchase form for Good gums." />
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1>Good gums purchase page</h1>
+        <img src="images/GoodGums-logo-sm.png" class="logo" alt="Good gums logo" />
+
+    </header>
+    
+    
+    <p class="clear"></p>
+
+    <main>
+        <section id="form">
+            <h2>Good gums form</h2>
+            <p>Please enter customer details, followed by order.</p>
+            <form method="get" action="response.html" id="parent">
+
+                <br />
+                <!-- Name input -->
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" placeholder="Jane Doe" maxlength="50" required="required" />
+                <br />
+                <!--Phone input-->
+                <label for="phone">Phone no:</label>
+                <input type="tel" id="phone" name="phone"> <br>
+
+
+                <!--Email-->
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="john@googles" maxlength="30" required="required" />
+                <br />
+
+                <!--address-->
+                <label for="address">Name:</label>
+                <input id="address" name="address" type="text" placeholder="7 bling rd" maxlength="40" required="required" />
+                <br /> <br> <br>
+
+
+                <!--ORDER FORM-->
+                <table id="order-form">
+                    <tr>
+                        <th>#</th>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                    </tr>
+
+                    <tr>
+                        <td>1</td>
+                        <td>
+                            <select name="product" id="product">
+                                <option value="Happy Wanderer - $11">Happy Wanderer - $11</option>
+                                <option value="Poa Grass - $5">Poa Grass - $5</option>
+                                <option value="Golden Wattle - $9">Golden Wattle - $9</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="quantity" /></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>
+                            <select id="product1" name="product1">
+                                <option value="Silver Princess Gum - $15">Silver Princess Gum - $15</option>
+                                <option value="Snow Gum - $10">Snow Gum - $10</option>
+                                <option value="Red Flowering Gum - $12">Red Flowering Gum - $12</option>
+                            </select>
+                        </td>
+
+                        <td><input type="text" name="quantity1" /></td>
+
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>
+                            <select id="product2" name="product2">
+                                <option value="Canberra Bells - $13">Canberra Bells - $13</option>
+                                <option value="Grevillia Firecracker - $6">Grevillia Firecracker - $6</option>
+                                <option value="Silky Oak Waratah - $16">Silky Oak Waratah - $16</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="quantity2" /></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>4</td>
+                        <td>
+                            <select name="product3" id="product3">
+                                <option value="Tall Kangaroo Paw - $4">Tall Kangaroo Paw - $4</option>
+                                <option value="Rusty Gum - $3">Rusty Gum - $3</option>
+                                <option value="Sturt Desert Pea - $2">Sturt Desert Pea - $2</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="quantity3" /></td>
+                    </tr>
+
+
+                    <tr>
+                        <td>5</td>
+                        <td>
+                            <select id="product4" name="product4">
+                                <option value="Rose Boronia - $7">Rose Boronia - $7</option>
+                                <option value="Lilly Pilly - $14">Lilly Pilly - $14</option>
+                                <option value="Crimson Bottlebrush - $">Crimson Bottlebrush - $8</option>
+                            </select>
+                        </td>
+                        <td><input type="text" name="quantity4" /></td>
+                    </tr>
+
+                </table>
+
+                <br> <br>
+
+
+
+
+
+
+
+                <!--ORDERFORM - FINISH-->
+                <!--Contact method-->
+                How would you like to be contacted for the payment:
+                <input type="radio" id="contact" name="contact" value="email">
+                <label for="contact">Email</label>
+
+                <input type="radio" id="contact1" name="contact" value="phone">
+                <label for="contact">Phone</label> <br>
+
+                <!--Confirm purchase-->
+                <label for="policyConfirm">Read and understand purchase and return policies:</label>
+                <input id="policyConfirm" name="policyConfirm" type="checkbox" value="Yes"> <br> <br>
+
+                <!--Notes/comments-->
+                <label for="message">Notes/comments:</label>
+                <textarea id="message" name="message" placeholder="Notes/comments..if any!" maxlength="500" required="required"
+                          rows="3"></textarea> <br />
+
+                <!--Purchase and clear buttons-->
+                <br />
+                <label for="submit"></label>
+                <input id="submit" name="submit" type="submit" value="Purchase" />
+
+                <input type="reset" value="Clear">
+
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
